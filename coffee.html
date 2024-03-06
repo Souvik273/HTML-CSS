@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(249, 243, 235);
+        }
+        #parent{
+            width: 85%;
+            margin: auto;
+            margin-top: 150px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:30px;
+            background-color: rgb(249, 243, 235);
+        }
+        .child{
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        }
+        .heading{
+            display: flex;
+            justify-content: space-between;
+            padding:30px;
+            font-family: Georgia;
+            font-size: 15px;
+        }
+        .child p{
+            padding: 0px 30px 25px 30px;
+            font-weight:lighter;
+            font-family: "Courier New";
+        }
+        .dollar{
+            color:rgb(180, 122, 46)
+        }
+
+        @media all and (min-width:768px) and (max-width:1023px){
+            #parent{
+                grid-template-columns: repeat(2,1fr);
+                width: 85%;
+            }
+        }
+
+        @media all and (min-width:340px) and (max-width:767px){
+            #parent{
+                grid-template-columns: repeat(1,1fr);
+                width: 85%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child">
+            <div class="heading">
+                <h3>Cappuccino</h3>
+                <h3 class="dollar">$49</h3>
+            </div>
+            <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+                <div class="heading">
+                    <h3>Americano</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Espresso</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Macchiato</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Mocha</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Coffee Latte</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Picclo Latte</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Ristretto</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div class="child">
+            <div class="heading">
+                    <h3>Affogato</h3>
+                    <h3 class="dollar">$49</h3>
+                </div>
+                <p>Usage of the internet is becoming more common due to rapid advance.</p>
+        </div>
+    </div>
+</body>
+</html>
