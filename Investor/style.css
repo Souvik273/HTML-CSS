@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+#parent{
+    width: 85%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.child1{
+    font-size: 30px;
+    font-family: Georgia;
+    text-align: center;
+    padding-left: 100px;
+    font-weight: 900;
+}
+.child2{
+    display: flex;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.child2 img{
+ width: 80%;
+}
+.child3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+.investor{
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.founder{
+    background-color: rgb(225, 230, 235);
+    padding-top:10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+.logo{
+    margin: auto;
+    width: 40%;
+}
+.logo img{
+    width: 100%;
+    margin: auto;
+}
+
+@media all and (min-width:768px) and (max-width:1023px){
+    #parent{
+        grid-template-columns: repeat(3,1fr);
+        width: 85%;
+    }
+}
+
+@media all and (min-width:340px) and (max-width:767px){
+    #parent{
+        grid-template-columns: repeat(2,1fr);
+        width: 85%;
+    }
+}
