@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    color: rgb(40, 131, 131);
+}
+.parent{
+    width: 30%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.child1{
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows: repeat(5,70px);
+    gap: 5px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.child{
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight:bold;
+}
+.child1 div:nth-child(1){
+    grid-area: 1/1/2/5;
+}
+.symbol{
+    color: white;
+    background-color: black;
+}
+.Clear{
+    color: white;
+    background-color: red;
+}
